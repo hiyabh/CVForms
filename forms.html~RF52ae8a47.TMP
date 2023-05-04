@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="heb" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <style>
+
+body {
+  background-color: #095ee8;
+}
+    h1{
+
+    }
+    input[type=text], select {
+        width: 100%;
+        direction: rtl !important;
+        padding: 2%;
+        margin: 10;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      direction: rtl !important;
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 2%;
+        margin: 10;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      direction: rtl !important;
+        background-color: #45a049;
+  margin: 10;
+    }
+
+label {
+  direction: rtl;
+  float: right;
+}
+    .box {
+      direction: rtl !important;
+        border-radius: 5px;
+        background-color: #a1b3d1;
+        padding: 10% 40% 10% 40%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    textarea {
+      direction: rtl !important;
+    margin: 10;
+    width: 100%;
+    height: 150px;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+    </style>
+  </head>
+
+<body>
+<div class="box">
+  <div class="blockquote text-center" style="text">
+     <h1>שאלון קורות חיים</h1>
+  </div>
+
+    <form id="myForm">
+      <div class="form-group">
+        <label for="name">שם</label>
+        <input type="text" class="form-control" id="name" placeholder="הכנס שם">
+      </div>
+      <div class="form-group">
+        <label for="addres">כתובת</label>
+        <input type="text" class="form-control" id="addres" placeholder="הכנס כתובת">
+      </div>
+      <div class="form-group">
+        <label for="phone">פלאפון</label>
+        <input type="number" class="form-control" id="phone" placeholder="הכנס פלאפון">
+      </div>
+      <div class="form-group">
+        <label for="mail">כתובת מייל</label>
+        <input type="text" class="form-control" id="mail" placeholder="הכנס מייל">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">בחר מינך</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>זכר</option>
+          <option>נקבה</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="myDate">הכנס תאריך לידה</label>
+        <input type="date" id="myDate" value="2000-01-01">
+      </div>
+      <div class="form-group">
+          <label>ספר לנו קצת על עצמך</label>
+          <form>
+              <textarea></textarea>
+          </form>
+      </div>
+      <div class="form-group">
+          <label>צרף קובץ קורות חיים</label>
+          <input type="file" name="file1">
+      </div>
+
+      <br/>
+
+      <button type="submit" class="btn btn-primary">הירשם</button>
+      <input class="btn btn-primary" type="reset" onclick="reset()" value="Reset">
+  </form>
+
+</div>
+
+<script>
+function reset() {
+    document.getElementById("myForm").reset();
+}
+</script>
+
+  </body>
+</html>
